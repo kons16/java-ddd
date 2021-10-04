@@ -1,6 +1,7 @@
 package service;
 
 import repository.UserRepository;
+import service.dto.UserStoreInputData;
 
 public class UserService {
 
@@ -10,7 +11,9 @@ public class UserService {
        this.ur = ur;
     }
 
-    public void storeUser() {
+    public void storeUser(UserStoreInputData u) {
+        // UserStoreInputData の password をハッシュ化する
+
         ur.storeUser();
     }
 }
