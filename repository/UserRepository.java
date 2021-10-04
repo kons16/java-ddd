@@ -1,5 +1,7 @@
 package repository;
 
+import domain.model.User;
+
 public interface UserRepository {
-    void storeUser();
+    void storeUser(User u);
 }
